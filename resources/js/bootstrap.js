@@ -27,5 +27,7 @@ window.axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
 //     forceTLS: true
 // });
 
-// Bootstrap
+// Require other modules
+window.$ = window.jQuery = require("jquery");
+
 require("bootstrap");
