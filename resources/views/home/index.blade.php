@@ -13,6 +13,7 @@
                         <a href="https://twitter.com/{{ env('AUTHOR_TWITTER_HANDLE') }}" target="_blank" rel="noopener noreferrer">{{ env('AUTHOR_NAME') }}</a>
                     </p>
                     <p>
+                        <i class="fab fa-laravel"></i>
                         Laravel version {{ app()::VERSION }}
                     </p>
                 </div><!-- /.text-center text-white -->
