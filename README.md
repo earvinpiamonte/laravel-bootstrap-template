@@ -62,19 +62,27 @@ For some reason, you also need to reload and provision.
 vagrant reload --provision
 ```
 
-#### Connect to the box via SSH and work
+#### Connect to the box via SSH and generate key
 
 ```
 vagrant ssh
 ```
 
-#### Compiling assets
-
-Navigate to the directory to `~/code/` and install npm packages:
-
 ```
 cd code/
 ```
+
+```
+cp .env.example .env
+```
+
+```
+art key:generate
+```
+
+#### Compiling assets
+
+Navigate to the directory to `~/code/` and install npm packages:
 
 ```
 npm install
