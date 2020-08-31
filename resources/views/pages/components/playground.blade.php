@@ -12,10 +12,14 @@
   <section class="py-5">
     <div class="container">
       <h2>Alert</h2>
-      <x-alert variant="warning" content="How to trigger BP fans? Ice Cream - Jennie with Selena ft. BLACKPINK." dismissable="true"/>
+      <x-alert variant="warning" content="Sample alert component." dismissable="true"/>
 
       <h2>Badge</h2>
-      <span class="badge badge-secondary">Test</span><!-- /.badge badge-secondary -->
+      <x-badge variant="danger" content="Danger"/>
+
+      <h2>Breadcrumb</h2>
+      <x-breadcrumb :pages="$data['breadcrumb']" />
+
     </div><!-- /.container -->
   </section><!-- /.py-5 -->
 </main>

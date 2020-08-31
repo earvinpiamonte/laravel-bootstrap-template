@@ -19,6 +19,24 @@ class Components extends Controller
 
     public function playground(Request $request)
     {
-        return view('pages.components.playground');
+        $data = [
+            'breadcrumb' => [
+                [
+                'label' => 'Home',
+                'url'   => url('/'),
+                ],
+                [
+                'label' => 'Library',
+                'url'   => url('library'),
+                ],
+                [
+                'label'  => 'Data',
+                'url'    => url('data'),
+                'active' => true,
+                ],
+            ]
+        ];
+
+        return view('pages.components.playground', compact('data'));
     }
 }
