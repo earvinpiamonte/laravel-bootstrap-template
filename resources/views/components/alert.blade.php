@@ -2,7 +2,7 @@
     {{
         $attributes->merge(
             [
-                'class' => 'alert alert-' . $context . ' ' . $dismissable
+                'class' => 'alert alert-' . $variant . ' ' . $dismissable
             ]
         )
     }}

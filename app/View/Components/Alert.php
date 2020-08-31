@@ -11,7 +11,7 @@ class Alert extends Component
      *
      * @var string
      */
-    public $context;
+    public $variant;
 
     /**
      * The alert if dismissable.
@@ -32,10 +32,10 @@ class Alert extends Component
      *
      * @return void
      */
-    public function __construct($context = 'secondary', $content = null, $dismissable = false)
+    public function __construct($variant = 'secondary', $content = null, $dismissable = false)
     {
 
-        $this->context     = $context;
+        $this->variant     = $variant;
         $this->content     = $content;
         $this->dismissable = $dismissable == 'true' ? 'alert-dismissible fade show' : null;
     }
