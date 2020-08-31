@@ -14,17 +14,11 @@ class Components extends Controller
      */
     public function __invoke(Request $request)
     {
-        $data['bootstrapBrands'] = [
-            'primary',
-            'secondary',
-            'success',
-            'danger',
-            'warning',
-            'info',
-            'light',
-            'dark'
-        ];
+        //
+    }
 
-        return view('pages.components.index', compact(['data']));
+    public function playground(Request $request)
+    {
+        return view('pages.components.playground');
     }
 }
