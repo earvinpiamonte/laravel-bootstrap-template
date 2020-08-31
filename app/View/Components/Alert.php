@@ -16,7 +16,7 @@ class Alert extends Component
     /**
      * The alert if dismissable.
      *
-     * @var string
+     * @var boolean
      */
     public $dismissable;
 
