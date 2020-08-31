@@ -18,7 +18,10 @@
       <x-badge variant="danger" content="Danger"/>
 
       <h2>Breadcrumb</h2>
-      <x-breadcrumb :pages="$data['breadcrumb']" />
+      <x-breadcrumb :pages="$data['breadcrumb']"/>
+
+      <h2>Button</h2>
+      <x-button content="Button"/>
 
     </div><!-- /.container -->
   </section><!-- /.py-5 -->
