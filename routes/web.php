@@ -14,4 +14,3 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'Home');
-Route::get('components/playground', 'Components@playground');
