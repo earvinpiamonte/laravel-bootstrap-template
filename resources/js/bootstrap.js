@@ -28,6 +28,9 @@ window.axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
 // });
 
 // Require other modules
+
+// jQuery
 window.$ = window.jQuery = require("jquery");
 
+// Bootstrap
 require("bootstrap");
