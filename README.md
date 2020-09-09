@@ -6,20 +6,20 @@
 
 This project includes the following:
 
--   [Laravel](https://laravel.com/) version 7.x
+-   [Laravel](https://laravel.com/) version 8.x
 -   [Bootsrap](https://getbootstrap.com/) version 4.5.x
--   [Laravel Homestead](https://laravel.com/docs/7.x/homestead)
+-   [Laravel Homestead](https://laravel.com/docs/8.x/homestead)
 -   [Browsersync](https://www.browsersync.io/)
 -   Pre-configured `webpack.mix.js` (+ versioning and Browsersync)
 
 ## Clone & install packages
 
 ```
-git clone https://github.com/earvinpiamonte/laravel-7-bootstrap-template.git
+git clone https://github.com/earvinpiamonte/laravel-bootstrap-template.git
 ```
 
 ```
-cd laravel-7-bootstrap-template/
+cd laravel-bootstrap-template/
 ```
 
 ```
@@ -42,11 +42,11 @@ This will create `Homestead.yaml` file for the project.
 
 #### Update `Homestead.yaml`
 
-Change the sites' `map` to `laravel-7-bootstrap-template.local`.
+Change the sites' `map` to `laravel-bootstrap-template.local`.
 
 ```
 sites:
-    - map: laravel-7-bootstrap-template.local
+    - map: laravel-bootstrap-template.local
       to: /home/vagrant/code/public
 ```
 
@@ -106,7 +106,7 @@ Using Browsersync (my favorite).
 npm run serve
 ```
 
-Open your browser and enter `http://laravel-7-bootstrap-template.local:3000`. The files are now on watch. Take note of the port!
+Open your browser and enter `http://laravel-bootstrap-template.local:3000`. The files are now on watch. Take note of the port!
 
 ### Development using your preferred server
 
