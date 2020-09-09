@@ -7,6 +7,7 @@
 /public/fonts
 /storage/*.key
 /vendor
+/packages
 .env
 .env.backup
 .phpunit.result.cache
