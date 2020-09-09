@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Home;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'Home');
+Route::get('/', Home::class);
