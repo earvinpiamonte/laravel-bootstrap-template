@@ -28,7 +28,7 @@ composer update
 
 ## Development setup
 
-For the default setup, I recommend using [Laravel Homestead](https://laravel.com/docs/7.x/homestead).
+For the default setup, I recommend using [Laravel Homestead](https://laravel.com/docs/8.x/homestead).
 
 ### Development using Laravel Homestead
 
