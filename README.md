@@ -142,13 +142,11 @@ After setting up `.env` file, proceed to install the npm packages and compile th
 
 ---
 
-## Contact
+## Support
 
-Found any issue or have some recommendation? Email me at [earvin.piamonte@gmail.com](mailto:earvin.piamonte@gmail.com).
+Found any issue or have some recommendation? Submit a ticket at [https://github.com/earvinpiamonte/laravel-bootstrap-template/issues](https://github.com/earvinpiamonte/laravel-bootstrap-template/issues).
 
-Also, check out my [website](https://earvinpiamonte.com). It's built using React, Gatsby as the static site generator and deployed on Netlify.
-
-### Follow me:
+## Maintainer
 
 GitHub - https://github.com/earvinpiamonte
 
@@ -160,4 +158,4 @@ Twitter - https://twitter.com/earvinpiamonte
 
 LinkedIn - https://www.linkedin.com/in/earvinpiamonte
 
-Website & Résumé - https://www.earvinpiamonte.com
+Website - https://www.earvinpiamonte.com
