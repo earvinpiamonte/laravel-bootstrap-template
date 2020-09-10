@@ -1,16 +1,19 @@
-# Laravel + Bootstrap project template
+# Laravel + Bootstrap project starter template
 
 [Laravel](https://laravel.com/) with [Bootstrap](https://getbootstrap.com/) project template.
 
+It's basically just a Laravel site configured to use Bootstrap as the front-end framework.
+
 ## Contents
 
-This project includes the following:
+This Laravel template includes:
 
 -   [Laravel](https://laravel.com/) version 8.x
 -   [Bootsrap](https://getbootstrap.com/) version 4.5.x
--   [Laravel Homestead](https://laravel.com/docs/8.x/homestead)
--   [Browsersync](https://www.browsersync.io/)
--   Pre-configured `webpack.mix.js` (+ versioning and Browsersync)
+-   [Font Awesome](https://fontawesome.com/) version 5.13.x
+-   Pre-compiled Sass
+-   Pre-configured `webpack.mix.js` (+ versioning and [Browsersync](https://www.browsersync.io/))
+-   [Laravel Homestead](https://laravel.com/docs/8.x/homestead) for local development environment
 
 ## Clone & install packages
 
@@ -28,9 +31,12 @@ composer update
 
 ## Development setup
 
-For the default setup, I recommend using [Laravel Homestead](https://laravel.com/docs/8.x/homestead).
+There are 2 ways to set this template for local development. Choose any of the following:
 
-### Development using Laravel Homestead
+-   [Using Laravel Homestead](#using-laravel-homestead) (recommended)
+-   [Using build-in development server](#using-built-in-development-server)
+
+### Using Laravel Homestead
 
 If you are going to use Laravel Homestead, execute the following:
 
@@ -50,19 +56,19 @@ sites:
       to: /home/vagrant/code/public
 ```
 
-#### Fire vagrant box
+#### Fire up vagrant box
 
 ```
 vagrant up
 ```
 
-For some reason, you also need to reload and provision.
+Provision, because some things just stop working for some reason.
 
 ```
 vagrant reload --provision
 ```
 
-#### Connect to the box via SSH and generate key
+#### Connect to the box via SSH
 
 ```
 vagrant ssh
@@ -71,6 +77,8 @@ vagrant ssh
 ```
 cd code/
 ```
+
+Generate key:
 
 ```
 cp .env.example .env
@@ -82,35 +90,55 @@ art key:generate
 
 #### Compiling assets
 
-Navigate to the directory to `~/code/` and install npm packages:
+Install npm packages:
 
 ```
-npm install
+npm i
 ```
 
-Run all Mix tasks.
+For compiling assets such as the CSS and JS files, you can choose to `npm run dev`, `npm run prod` or `npm run serve`.
+
+If you are about to run this project template for the first time, you need to run `npm run dev` to build assets on `public/` directory.
+
+Compile assets.
 
 ```
 npm run dev
 ```
 
-Run all Mix tasks and compile to minified output.
+Compile assets for production.
 
 ```
 npm run prod
 ```
 
-Using Browsersync (my favorite).
+Using Browsersync.
 
 ```
 npm run serve
 ```
 
-Open your browser and enter `http://laravel-bootstrap-template.local:3000`. The files are now on watch. Take note of the port!
+Open your browser and enter `http://laravel-bootstrap-template.local:3000`. The files configured on `webpack.mix.js` are now on watch. Please take note of the port and change if needed.
 
-### Development using your preferred server
+### Using built-in development server
 
-documentation still in the works!
+If you don't use Laravel Homestead, you can following the next steps in using built-in development server.
+
+Update `.env.example` with your preference and set `USE_HOMESTEAD` to `false`.
+
+Make a `.env` file by copying the `.env.example`.
+
+```
+cp .env.example .env
+```
+
+Generate key:
+
+```
+php artisan key:generate
+```
+
+After setting up `.env` file, proceed to install the npm packages and compile the assets as stated on the [Compiling assets](#compiling-assets) section.
 
 ---
 
