@@ -154,8 +154,6 @@ GitHub Gist - https://gist.github.com/earvinpiamonte
 
 CodePen - https://codepen.io/earvinpiamonte
 
-Twitter - https://twitter.com/earvinpiamonte
-
 LinkedIn - https://www.linkedin.com/in/earvinpiamonte
 
 Website - https://www.earvinpiamonte.com
